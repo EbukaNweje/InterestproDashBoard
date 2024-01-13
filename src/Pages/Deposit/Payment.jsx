@@ -31,7 +31,7 @@ const Payment = () => {
     // console.log(depositData)
 
     const [state, setState] = useState({
-        value: `${paymentname === "BITCOINP PAYMENT"? ("15UTPp4WXKzYHK3kHyjFKESFrftVfGTFxx"): paymentname === "ETHEREUM PAYMENT"? ("0x961b91d0d215146cd0050f1ddcfe918d24572ded"): paymentname ==="DOGECOIN PAYMENT"? ("D9v1mPpGZJ47dZk2wbFdX2xE7DehgVhsAq"):  paymentname ==="BNB PAYMENT"? ("0x961b91d0d215146cd0050f1ddcfe918d24572ded"): "Chosse a Payment Method"}`,
+        value: `${paymentname === "BITCOIN PAYMENT"? ("15UTPp4WXKzYHK3kHyjFKESFrftVfGTFxx"): paymentname === "ETHEREUM PAYMENT"? ("0x961b91d0d215146cd0050f1ddcfe918d24572ded"): paymentname ==="DOGECOIN PAYMENT"? ("D9v1mPpGZJ47dZk2wbFdX2xE7DehgVhsAq"):  paymentname ==="BNB PAYMENT"? ("0x961b91d0d215146cd0050f1ddcfe918d24572ded"): "Chosse a Payment Method"}`,
         copied: false,
       });
 
@@ -85,7 +85,7 @@ const Payment = () => {
                                 </div>
                                  </CopyToClipboard>
                             </div>
-                            <h5>Network Type:<span>{paymentname=== "BITCOINP PAYMENT"? "BTC" : paymentname=== "ETHEREUM PAYMENT"? "ETH" :  paymentname === "USDT PAYMENT" ? "USDT" : paymentname=== "ETHEREUM PAYMENT"? "ETH" :  paymentname === "BNB PAYMENT" ? "BNB": null}</span></h5>
+                            <h5>Network Type:<span>{paymentname=== "BITCOIN PAYMENT"? "BTC" : paymentname=== "ETHEREUM PAYMENT"? "ETH" :  paymentname === "USDT PAYMENT" ? "USDT" : paymentname=== "ETHEREUM PAYMENT"? "ETH" :  paymentname === "BNB PAYMENT" ? "BNB": null}</span></h5>
                         </div>
                         <div className="DepPaymentContentD">
                             <p>Upload Payment proof after payment.</p>
