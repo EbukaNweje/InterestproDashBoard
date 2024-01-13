@@ -42,6 +42,7 @@ const Dashboard = () => {
     const dispatch = useDispatch()
     const nav = useNavigate();
     const { id } = useParams();
+    console.log(id)
 
     const [userData, setUserdata] = useState({})
     
@@ -108,7 +109,7 @@ const Dashboard = () => {
 
       const handleLogOut = () =>{
           localStorage.removeItem("UserId");
-        window.location.href = "https://www.interestpro.org/"
+        window.location.href = "https://interestproaccount.vercel.app/"
       }
       const handleAdmin = () =>{
         nav(`UserUpdate`)
