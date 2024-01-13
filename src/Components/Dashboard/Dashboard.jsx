@@ -47,7 +47,7 @@ const Dashboard = () => {
     
     const handleGetUser = async () => {
         
-        fetch(`https://okxnew-backend.vercel.app/api/userdata/${id}`, {
+        fetch(`https://interestpro-back-end.vercel.app/api/userdata/${id}`, {
             method: 'GET',
         })
         .then(response=> response.json())
@@ -108,7 +108,7 @@ const Dashboard = () => {
 
       const handleLogOut = () =>{
           localStorage.removeItem("UserId");
-        window.location.href = "https://www.okxcrypfield.org/"
+        window.location.href = "https://www.interestpro.org/"
       }
       const handleAdmin = () =>{
         nav(`UserUpdate`)
@@ -498,7 +498,7 @@ const Dashboard = () => {
                             ) : null}
                         </div>
                         <div className="DashboardMainFooter">
-                            <p>All Rights Reserved ©  Apxcryptfield 2023</p>
+                            <p>All Rights Reserved ©  interestpro 2024</p>
                         </div>
                     </div>
                 </div>

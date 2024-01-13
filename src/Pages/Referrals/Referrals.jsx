@@ -7,14 +7,14 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 const Referrals = () => {
     
     const [state, setState] = useState({
-        value: "https://www.okxcryptfield.net/",
+        value: "https://www.interestpro.net/",
         copied: false,
       });
 
     return (
         <>
             <div className="ReferralBody">
-                <h1>Refer users to  OkxCryptfield community</h1>
+                <h1>Refer users to Interestpro community</h1>
                 <div className="ReferralContent">
                     <div className="ReferralContentTop">
                         <div className="ReferralContentTopInputndLabel">

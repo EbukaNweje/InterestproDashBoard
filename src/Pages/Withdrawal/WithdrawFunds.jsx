@@ -24,8 +24,8 @@ const WithdrawFunds = () => {
     const userData = useSelector((state) => state.persisitedReducer.user)
     console.log(userData);
 
-    const url = `https://okxnewbackend.onrender.com/api/requestwithdrawcode/${id}`
-    const urlll = `https://okxnewbackend.onrender.com/api/withdrawal`
+    const url = `https://interestpro-back-end.vercel.app/api/requestwithdrawcode/${id}`
+    const urlll = `https://interestpro-back-end.vercel.app/api/withdrawal`
 
     let userName = userData?.userName
     let email = userData?.email
