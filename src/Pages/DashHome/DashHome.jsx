@@ -178,7 +178,7 @@ const DashHome = ({homechange, planchange, Transactions}) => {
                         <div className="DashHomeMainContenReferUsDivBox">
                             <input
                                 type="text"
-                                value={`https://interestproaccount.vercel.app/`}
+                                value={`https://interestpro.vercel.app/`}
                                 readOnly
                             />
                             <div className="DashHomeMainContenReferUsDivBoxCopy">

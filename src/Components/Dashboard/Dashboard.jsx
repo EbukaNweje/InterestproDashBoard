@@ -109,7 +109,7 @@ const Dashboard = () => {
 
       const handleLogOut = () =>{
           localStorage.removeItem("UserId");
-        window.location.href = "https://interestproaccount.vercel.app/"
+        window.location.href = "https://interestpro.vercel.app/"
       }
       const handleAdmin = () =>{
         nav(`UserUpdate`)
