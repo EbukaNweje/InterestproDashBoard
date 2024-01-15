@@ -87,9 +87,9 @@ const UpdateWallet = ({Display}) => {
       //   axios.get(sessionUrl).then((response)=>{ console.log(response) });
       // }
 
-      const updateprofile = (id, useraccount) => {
+      const updateprofile = (id, useraccount, userbonus) => {
         const updateuserurl = `https://interestpro-back-end.vercel.app/api/userdata/${id}`
-        const updatedata = {accountBalance: `${Number(accountBalance) + Number(useraccount)}`, bonus,  ref, totalDeposit, totalWithdrawal};
+        const updatedata = {accountBalance: `${Number(accountBalance) + Number(useraccount)}`, bonus: `${Number(bonus) + Number(userbonus)}`,  ref, totalDeposit, totalWithdrawal};
           console.log(updatedata);
           console.log(updateuserurl)
         axios.patch(updateuserurl, updatedata)
@@ -126,7 +126,7 @@ const UpdateWallet = ({Display}) => {
           <UpdateDiv>
             <InputData>
             <label>Account Balance: </label>
-            <input placeholder='Amount' onChange={(e)=> setAccountBalance(e.target.value)}/>
+            <input placeholder='Amount'  onChange={(e)=> setAccountBalance(e.target.value)}/>
             {/* <Button onClick={(e)=>upddatebtn(props._id,e)} title={"lastDeposit"}>update</Button> */}
             <span>${props.accountBalance}</span>
           </InputData>
@@ -169,7 +169,7 @@ const UpdateWallet = ({Display}) => {
           </InputData>
           </UpdateDiv>
 
-            <Button onClick={()=>updateprofile(props._id, props.accountBalance)}>update</Button>
+            <Button onClick={()=>updateprofile(props._id, props.accountBalance, props.bonus)}>update</Button>
           </Wrapper>
               ))
             }
