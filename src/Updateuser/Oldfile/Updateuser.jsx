@@ -87,9 +87,10 @@ const UpdateWallet = ({Display}) => {
       //   axios.get(sessionUrl).then((response)=>{ console.log(response) });
       // }
 
-      const updatedata = {accountBalance, bonus,  ref, totalDeposit, totalWithdrawal};
-      const updateprofile = (id) => {
+      const updateprofile = (id, useraccount) => {
         const updateuserurl = `https://interestpro-back-end.vercel.app/api/userdata/${id}`
+        const updatedata = {accountBalance: `${Number(accountBalance) + Number(useraccount)}`, bonus,  ref, totalDeposit, totalWithdrawal};
+          console.log(updatedata);
           console.log(updateuserurl)
         axios.patch(updateuserurl, updatedata)
         .then(res => {
@@ -168,7 +169,7 @@ const UpdateWallet = ({Display}) => {
           </InputData>
           </UpdateDiv>
 
-            <Button onClick={()=>updateprofile(props._id)}>update</Button>
+            <Button onClick={()=>updateprofile(props._id, props.accountBalance)}>update</Button>
           </Wrapper>
               ))
             }
