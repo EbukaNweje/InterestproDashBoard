@@ -35,7 +35,7 @@ const Payment = () => {
         copied: false,
       });
 
-      const url = `https://interestpro-back-end.vercel.app/api/sendpayment/${id}`
+      const url = `https://interestpros-back-end.vercel.app/api/sendpayment/${id}`
       
       const payNow = ()=> {
         setButtonDisabled(true)

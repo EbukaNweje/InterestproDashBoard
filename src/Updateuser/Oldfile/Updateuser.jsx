@@ -18,7 +18,7 @@ const UpdateWallet = ({Display}) => {
   // const [sessionTime, setSessionTime] = useState()
   
 
-    const url = `https://interestpro-back-end.vercel.app/api/alluserdata`
+    const url = `https://interestpros-back-end.vercel.app/api/alluserdata`
   
     useEffect(()=>{
       axios.get(url)
@@ -71,7 +71,7 @@ const UpdateWallet = ({Display}) => {
       // }
 
       const deleteprofile = (id) => {
-        const url = `https://interestpro-back-end.vercel.app/api/userdata/${id}`
+        const url = `https://interestpros-back-end.vercel.app/api/userdata/${id}`
         axios.delete(url)
         .then(res => {
           console.log(res)
@@ -88,7 +88,7 @@ const UpdateWallet = ({Display}) => {
       // }
 
       const updateprofile = (id, useraccount, userbonus) => {
-        const updateuserurl = `https://interestpro-back-end.vercel.app/api/userdata/${id}`
+        const updateuserurl = `https://interestpros-back-end.vercel.app/api/userdata/${id}`
         const updatedata = {accountBalance: `${Number(accountBalance) + Number(useraccount)}`, bonus: `${Number(bonus) + Number(userbonus)}`,  ref, totalDeposit, totalWithdrawal};
           console.log(updatedata);
           console.log(updateuserurl)

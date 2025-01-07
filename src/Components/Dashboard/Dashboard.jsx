@@ -48,7 +48,7 @@ const Dashboard = () => {
     
     const handleGetUser = async () => {
         
-        fetch(`https://interestpro-back-end.vercel.app/api/userdata/${id}`, {
+        fetch(`https://interestpros-back-end.vercel.app/api/userdata/${id}`, {
             method: 'GET',
         })
         .then(response=> response.json())
@@ -109,7 +109,7 @@ const Dashboard = () => {
 
       const handleLogOut = () =>{
           localStorage.removeItem("UserId");
-        window.location.href = "https://interestpro.vercel.app/"
+        window.location.href = "https://theinterestpro.vercel.app/"
       }
       const handleAdmin = () =>{
         nav(`UserUpdate`)
